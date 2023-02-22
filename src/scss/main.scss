@@ -1,0 +1,105 @@
+@import 'vars';
+/* Переменные */
+@import 'fonts';
+/* Шрифты */
+@import 'libs';
+/*библиотеки*/
+@import 'reset';
+/* Сброс */
+@import 'global';
+/* Глобальные стили */
+
+.top {
+    background-image: url(../images/top-bg/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 930px;
+    color: #FFFFFF
+}
+
+.header {
+    background: rgba(39, 36, 36, 0.8);
+}
+
+.header__top {
+    @extend %df-jc-between;
+    padding: 14px 0;
+}
+
+.header__top-slogan,
+.header__top-working-text {
+    @extend %os-600;
+    font-size: 13px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.header__top-working-hours {}
+
+.header__top-messenger-box {}
+
+.header__top-messenger {}
+
+.header__top-watsapp {}
+
+.header__top-telegram {}
+
+.header__info {
+    @extend %df-jc-between;
+}
+
+.header__info-phone {
+    @extend %df-jc-between;
+    flex-direction: column;
+}
+
+.header__info-phone-link {}
+
+.header__logo {
+    padding: 20px 0;
+}
+
+.header__logo-link {}
+
+.header__logo-img {}
+
+.header__info-box {}
+
+.header__info-btn {}
+
+.header__bottom {
+    @extend %df-jc-between;
+}
+
+.header__menu {}
+
+.menu__list {
+    @extend %df-jc-between;
+}
+
+.menu__item {}
+
+.menu__link {}
+
+.header__social {
+    @extend %df-jc-between;
+    padding: 10px 0;
+}
+
+.header__item {}
+
+.header__social-link {}
+
+.header__social-img {}
+
+.top__content {}
+
+.page-title {
+    @extend %page-title;
+}
+
+
+/* МЕДИА-ЗАПРОСЫ */
+@import 'media';

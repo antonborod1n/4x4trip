@@ -1,0 +1,50 @@
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    @extend %os-400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    color: $text;
+}
+
+.container {
+    max-width: 1490px; //сайта контейнер
+    max-width: 1505px; //figma контейнер
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.cercle {
+    @extend %df-jc-center;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: #FFAF3E;
+    box-shadow: 0px 4px 44px rgba(255, 175, 62, 0.2);
+
+    &-halo {
+        @extend %df-jc-center;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        background: rgba(255, 175, 62, 0.2);
+    }
+
+    &-border {
+        @extend %df-jc-center;
+        border-radius: 50%;
+        min-width: 34px;
+        min-height: 34px;
+        border: 1px solid rgba(255, 175, 62, 0.2);
+    }
+}

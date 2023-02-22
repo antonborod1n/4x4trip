@@ -1,0 +1,111 @@
+/* COLOR */
+$accent: #ffaf3e;
+$text: #81838C;
+$title: #466F82;
+$footer-text: #4B4E5A;
+$red: #EC2B2B;
+
+/* FONTS */
+%osc-300 {
+    font-family: 'OpenSans-Condensed-Light';
+    font-weight: 300;
+}
+
+%osc-700 {
+    font-family: 'OpenSans-Condensed-Bold';
+    font-weight: 700;
+}
+
+%os-700 {
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+}
+
+%os-800 {
+    font-family: 'OpenSans-ExtraBold';
+    font-weight: 800;
+}
+
+%os-400 {
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+}
+
+%os-600 {
+    font-family: 'OpenSans-SemiBold';
+    font-weight: 600;
+}
+
+/* BUTTON */
+%btn-accent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: $accent;
+    @extend %os-700;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+%btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @extend %os-700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+%df-jc-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%df-jc-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%page-title {
+    @extend %os-600;
+    font-size: 72px;
+    line-height: 98px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+
+    & span {
+        background: $accent;
+    }
+}
+
+%title {
+    @extend %osc-700;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $title;
+
+    & span {
+        color: $accent;
+    }
+}
+
+%subtitle {
+    @extend %os-600;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: $title;
+}
