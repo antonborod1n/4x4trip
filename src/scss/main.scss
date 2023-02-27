@@ -14,8 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 930px;
+    min-height: 930px;
     color: #FFFFFF
 }
 
@@ -213,20 +212,218 @@
     transform: scale(1.1)
 }
 
-
-
-.top__content {}
-
 .page-title {
     @extend %page-title;
 }
 
+/* CLASS */
 
+.box {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
 
+.offer {
+    padding: 163px 0 107px;
+}
+
+.offer__inner {
+    display: flex;
+    gap: 42px;
+}
+
+.offer__title {
+    @extend %title;
+    margin-bottom: 89px;
+}
+
+.offer__slider {
+    display: flex;
+    gap: 10px;
+}
+
+.offer__slider-title {
+    @extend %osc-700;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: $title;
+    margin-bottom: 25px;
+}
+
+.offer__slider-info-box {
+    display: flex;
+
+    column-gap: 24px;
+    padding-top: 47px;
+}
+
+.offer__slider-item {
+    position: relative;
+    @extend %os-600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #466F82;
+    margin-bottom: 28px;
+    padding-left: 50px;
+
+    &:before {
+        position: absolute;
+        top: -6px;
+        left: 0;
+        content: url(../images/icons/item-dots.svg);
+    }
+}
+
+.offer__slider-link {
+    @extend %btn;
+    font-size: 20px;
+    line-height: 27px;
+    height: 68px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+}
+
+.offer__slider-rew {
+    width: 240px;
+    @extend %btn-accent;
+
+    span {
+        margin-left: 30px;
+    }
+}
+
+.offer__slider-prev {
+    color: $accent;
+    border: 2px solid $accent;
+    transition: border color .3s;
+
+    &:hover {
+        transition: border color .3s;
+        color: darken($color: $accent, $amount: 12%);
+        border: 2px solid darken($color: $accent, $amount: 12%);
+    }
+}
+
+.bye-certificate {}
+
+.bye-certificate__title {
+    @extend %title;
+    text-align-last: left;
+    margin-bottom: 52px;
+}
+
+.bye-certificate__inner {
+    background: #F9F9F9;
+    border: 2px solid #CED9DE;
+    margin-bottom: 103px;
+}
+
+.bye-certificate__item {
+    @extend %f-b;
+    padding: 30px;
+    border-bottom: 2px solid #CED9DE;
+}
+
+.bye-certificate__name {
+    @extend %os-600;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: $title;
+}
+
+.bye-certificate__box {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.bye-certificate__line {
+    width: 87px;
+    height: 2px;
+    background: $title;
+}
+
+.bye-certificate__del {
+    @extend %osc-300;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: $title;
+}
+
+.bye-certificate__ins {
+    @extend %osc-700;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $title;
+    text-decoration-line: none;
+}
+
+.bye-certificate__btn {
+    @extend %btn-accent;
+    padding: 12px 30px;
+}
+
+.btn__buy span {
+    margin-left: 30px;
+}
+
+.bye-certificate__content {
+    @extend %f-b;
+    padding: 30px 100px;
+    background: #FFFFFF;
+}
+
+.bye-certificate__content-col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 47px;
+    width: 500px;
+}
+
+.bye-certificate__content-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.bye-certificate__content-item {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+}
+
+.bye-certificate__content-title {
+    @extend %os-700;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: $title;
+}
+
+.bye-certificate__content-slogan {
+    font-size: 20px;
+    line-height: 27px;
+    color: $title;
+}
+
+.bye-certificate__descr-text {
+    color: $title;
+}
 
 /* FOOTER */
 
 .footer {
+    margin-top: 214px;
+
     &__logo {
         margin-bottom: 10px;
     }

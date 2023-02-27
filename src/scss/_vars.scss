@@ -50,6 +50,12 @@ $red: #EC2B2B;
     text-transform: uppercase;
     color: #FFFFFF;
     cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+        transition: background-color .3s;
+        background-color: darken($color: $accent, $amount: 12%)
+    }
 }
 
 %btn {

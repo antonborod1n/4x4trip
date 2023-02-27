@@ -12,6 +12,4 @@ document.addEventListener('DOMContentLoaded', function () {
         menuMain.classList.remove('active');
         close.classList.remove('active');
     });
-
-
 })
