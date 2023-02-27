@@ -419,6 +419,53 @@
     color: $title;
 }
 
+.package {
+    padding: 97px 0;
+}
+
+.package__title {
+    @extend %subtitle;
+    margin-bottom: 55px;
+}
+
+.package__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.package__item {
+    display: flex;
+    flex-direction: column;
+    width: 403px;
+    border: 1px solid #466F82;
+    padding: 30px;
+}
+
+.package__item-content {
+    flex-grow: 1;
+    margin: 37px 0;
+}
+
+.package__subtitle {
+    @extend %os-700;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: $title;
+    margin-bottom: 20px;
+}
+
+.package__text {
+    margin-bottom: 20px;
+}
+
+.package__btn {
+    @extend %btn-accent;
+    padding: 12px 30px;
+    width: 100%;
+}
+
 /* FOOTER */
 
 .footer {
