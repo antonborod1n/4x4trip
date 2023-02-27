@@ -1,37 +1,101 @@
-@media (max-width: 1200px) {}
+@media (max-width: 1270px) {
+    .header__menu {
+        margin-left: 0px;
+    }
 
-@media (max-width: 992px) {}
+    .header__top-slogan {
+        display: none;
+    }
 
-@media (max-width: 768px) {}
+    .header__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-column-gap: 0px;
+    }
+
+    .menu__link {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .menu__btn {
+        display: block;
+    }
+
+    .header__box {
+        display: none;
+    }
+
+    .header__info-btn {
+        display: none;
+    }
+
+    .header__bottom {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 100%;
+        background-color: rgb(5, 5, 5);
+        flex-direction: column;
+        transform: translateY(-500px);
+        transition: transform .3s;
+    }
+
+    .header__bottom.active {
+        transition: transform .3s;
+        transform: translateX(0);
+    }
+
+    .menu__item {
+        margin: 15px 0;
+    }
+
+    .menu__list {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header__info-phone {
+        display: none;
+    }
+}
 
 @media (max-width: 568px) {}
 
 @media (max-width: 450px) {
 
-    .footer-content__inner {
-        justify-content: center;
-        flex-direction: column;
-        padding: 24px 0;
-        text-align: center;
-    }
+    .footer {
+        &-content__inner {
+            justify-content: center;
+            flex-direction: column;
+            padding: 24px 0;
+            text-align: center;
+        }
 
-    .footer__slogan {
-        font-size: 11px;
-        line-height: 23px;
-    }
+        &__slogan {
+            font-size: 11px;
+            line-height: 23px;
+        }
 
-    .footer-contacts__link-tel {
-        font-size: 17px;
-        line-height: 28px;
-    }
+        &-contacts__link-tel {
+            font-size: 17px;
+            line-height: 28px;
+        }
 
-    .footer__copy {
-        justify-content: center;
-    }
+        &__copy {
+            justify-content: center;
 
-    .footer__copy-text,
-    .footer__copy-desc {
-        display: none;
+            &-text,
+            &-desc {
+                display: none;
+            }
+        }
     }
 }
 

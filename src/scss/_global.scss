@@ -26,7 +26,7 @@ body {
 }
 
 .cercle {
-    @extend %df-jc-center;
+    @extend %f-c;
     border-radius: 50%;
     width: 14px;
     height: 14px;
@@ -34,7 +34,7 @@ body {
     box-shadow: 0px 4px 44px rgba(255, 175, 62, 0.2);
 
     &-halo {
-        @extend %df-jc-center;
+        @extend %f-c;
         border-radius: 50%;
         width: 25px;
         height: 25px;
@@ -42,7 +42,7 @@ body {
     }
 
     &-border {
-        @extend %df-jc-center;
+        @extend %f-c;
         border-radius: 50%;
         min-width: 34px;
         min-height: 34px;
