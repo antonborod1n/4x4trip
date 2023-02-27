@@ -100,6 +100,106 @@
     @extend %page-title;
 }
 
+/* FOOTER */
+
+.footer {}
+
+.footer-content {
+    background-color: $accent;
+}
+
+.footer-content__inner {
+    position: relative;
+    @extend %df-jc-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0 40px;
+}
+
+.footer-content__inner::before {
+    content: url(../images/content/footer-decor.svg);
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+
+.footer__logo {
+    margin-bottom: 10px;
+}
+
+.footer__slogan {
+    @extend %os-600;
+    font-size: 13px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: $title;
+}
+
+.footer__item {
+    margin-bottom: 4px;
+}
+
+.footer__link {
+    font-size: 14px;
+    line-height: 33px;
+    color: $footer-text;
+
+    &:hover {
+        color: darken($color: $title, $amount: 20%);
+    }
+}
+
+.footer-contacts__title {
+    @extend %os-600;
+    font-size: 13px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: $footer-text;
+}
+
+.footer-contacts__link {
+    @extend %os-600;
+    font-size: 14px;
+    line-height: 23px;
+    color: $footer-text;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.footer-content__address {
+    @extend %os-600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: $footer-text;
+    margin-top: 12px;
+}
+
+.footer__copy {
+    @extend %df-jc-between;
+    flex-wrap: wrap;
+}
+
+.footer__copy-text {
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: $footer-text;
+}
+
+.footer__copy-desc {
+    font-size: 14px;
+    line-height: 33px;
+    color: $footer-text;
+}
+
 
 /* МЕДИА-ЗАПРОСЫ */
 @import 'media';

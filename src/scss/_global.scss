@@ -5,7 +5,8 @@ body {
 }
 
 body {
-    @extend %os-400;
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     display: flex;

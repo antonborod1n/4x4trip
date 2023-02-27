@@ -6,6 +6,33 @@
 
 @media (max-width: 568px) {}
 
-@media (max-width: 450px) {}
+@media (max-width: 450px) {
+
+    .footer-content__inner {
+        justify-content: center;
+        flex-direction: column;
+        padding: 24px 0;
+        text-align: center;
+    }
+
+    .footer__slogan {
+        font-size: 11px;
+        line-height: 23px;
+    }
+
+    .footer-contacts__link-tel {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .footer__copy {
+        justify-content: center;
+    }
+
+    .footer__copy-text,
+    .footer__copy-desc {
+        display: none;
+    }
+}
 
 @media (max-width: 350px) {}
