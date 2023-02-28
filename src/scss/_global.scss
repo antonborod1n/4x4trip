@@ -48,3 +48,16 @@ body {
         border: 1px solid rgba(255, 175, 62, 0.2);
     }
 }
+
+
+.list-item {
+    position: relative;
+    padding-left: 50px;
+
+    &:before {
+        position: absolute;
+        top: -6px;
+        left: 0;
+        content: url(../images/icons/item-dots.svg);
+    }
+}

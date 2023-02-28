@@ -9,6 +9,7 @@ module.exports = {
     main: path.resolve(__dirname, './src/index.js'),
     index_catalog: path.resolve(__dirname, './src/index_catalog.js'),
     index_product: path.resolve(__dirname, './src/index_product.js'),
+    index_quests: path.resolve(__dirname, './src/index_quests.js'),
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -31,6 +32,12 @@ module.exports = {
       filename: 'product.html',
       chunks: ['index_product']
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/quests.html'),
+      filename: 'quests.html',
+      chunks: ['index_quests']
+    }),
+
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new CopyPlugin({
@@ -69,12 +76,12 @@ module.exports = {
         test: /\.(html)$/,
         include: path.join(__dirname, 'src/views'),
         use: {
-            loader: 'html-loader',
-            options: {
-                interpolate: true
-            }
+          loader: 'html-loader',
+          options: {
+            interpolate: true
+          }
         }
-      } 
+      }
     ]
   },
 
