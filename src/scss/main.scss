@@ -323,71 +323,14 @@
     @extend %subtitle;
 }
 
-.bye-certificate__inner {
-    background: #F9F9F9;
-    border: 2px solid #CED9DE;
-    margin-bottom: 103px;
-}
-
-.bye-certificate__item {
-    @extend %f-b;
-    padding: 30px;
-    border-bottom: 2px solid #CED9DE;
-}
-
-.bye-certificate__name {
-    @extend %os-600;
-    font-size: 32px;
-    line-height: 44px;
-    text-transform: uppercase;
-    color: $title;
-}
-
-.bye-certificate__box {
-    display: flex;
-    align-items: center;
-    column-gap: 25px;
-}
-
 .bye-certificate__line {
     width: 87px;
     height: 2px;
     background: $title;
 }
 
-.bye-certificate__del {
-    @extend %osc-300;
-    font-size: 36px;
-    line-height: 49px;
-    text-align: center;
-    text-decoration-line: line-through;
-    text-transform: uppercase;
-    color: $title;
-}
-
-.bye-certificate__ins {
-    @extend %osc-700;
-    font-size: 48px;
-    line-height: 65px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $title;
-    text-decoration-line: none;
-}
-
-.bye-certificate__btn {
-    @extend %btn-accent;
-    padding: 12px 30px;
-}
-
 .btn__buy span {
     margin-left: 30px;
-}
-
-.bye-certificate__content {
-    @extend %f-b;
-    padding: 30px 100px;
-    background: #FFFFFF;
 }
 
 .bye-certificate__content-col {
@@ -427,28 +370,28 @@
     color: $title;
 }
 
-.bye-certificate__content-2 {
-    padding: 40px 100px;
+.bye-certificate__content {
+    @extend %f-b;
+    padding: 40px;
     background: #FFFFFF;
     border: 5px solid #FFAF3E;
     border-radius: 5px;
-    margin-bottom: 95px;
 }
 
-.bye-certificate__item-2 {
+.bye-certificate__item {
     padding: 40px 30px;
     border: 5px solid #FFAF3E;
     border-radius: 5px;
 }
 
-.bye-certificate__inner-2 {
+.bye-certificate__inner {
     margin-bottom: 103px;
     display: flex;
     gap: 20px;
     justify-content: space-between;
 }
 
-.bye-certificate__box-2 {
+.bye-certificate__box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -457,7 +400,7 @@
     margin-bottom: 23px;
 }
 
-.bye-certificate__name-2 {
+.bye-certificate__name {
     @extend %os-600;
     font-size: 24px;
     line-height: 150%;
@@ -466,7 +409,7 @@
     margin-top: 12px;
 }
 
-.bye-certificate__del-2 {
+.bye-certificate__del {
     @extend %osc-300;
     font-size: 30px;
     line-height: 41px;
@@ -476,7 +419,7 @@
     color: $title;
 }
 
-.bye-certificate__ins-2 {
+.bye-certificate__ins {
     @extend %osc-700;
     font-size: 40px;
     line-height: 54px;
@@ -486,7 +429,7 @@
     text-decoration-line: none;
 }
 
-.bye-certificate__price-2 {
+.bye-certificate__price {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -494,16 +437,11 @@
     margin-bottom: 23px;
 }
 
-.bye-certificate__btn-2 {
+.bye-certificate__btn {
     @extend %btn-accent;
     padding: 12px 30px;
     width: 100%;
 }
-
-
-
-
-
 
 .package {
     padding-bottom: 97px;
