@@ -80,3 +80,13 @@ body {
     color: #FFFFFF;
     text-align: center;
 }
+
+.activity-slogan {
+    display: block;
+    @extend %osc-700;
+    font-size: 48px;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}

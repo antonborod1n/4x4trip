@@ -10,6 +10,8 @@ module.exports = {
     index_catalog: path.resolve(__dirname, './src/index_catalog.js'),
     index_product: path.resolve(__dirname, './src/index_product.js'),
     index_quests: path.resolve(__dirname, './src/index_quests.js'),
+    index_team: path.resolve(__dirname, './src/index_team.js'),
+    index_activity: path.resolve(__dirname, './src/index_activity.js'),
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -36,6 +38,16 @@ module.exports = {
       template: path.resolve(__dirname, './src/quests.html'),
       filename: 'quests.html',
       chunks: ['index_quests']
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/team.html'),
+      filename: 'team.html',
+      chunks: ['index_team']
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/activity.html'),
+      filename: 'activity.html',
+      chunks: ['index_activity']
     }),
 
     new CleanWebpackPlugin(),
