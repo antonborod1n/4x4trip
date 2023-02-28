@@ -622,6 +622,250 @@
     }
 }
 
+/* QUEST-PAGE */
+
+.offer-slider {
+    padding-bottom: 108px;
+}
+
+.offer-slider__item {
+    width: 328px;
+    position: relative;
+    background: #FFFFFF;
+    border: 6px solid $accent;
+    transition: all .5s;
+    cursor: pointer;
+
+}
+
+.offer-slider__item:hover:after {
+    transform: translate(-10px, -10px);
+    transition: all .5s;
+}
+
+.offer-slider__item:after {
+    border: 13px solid $accent;
+    content: "";
+    background-color: $accent;
+    display: block;
+    position: absolute;
+    right: -16px;
+    top: 8px;
+    bottom: -16px;
+    z-index: -1;
+    width: 328px;
+}
+
+.offer-slider {}
+
+.offer-slider__title {
+    @extend %title;
+    padding: 168px 0 102px;
+}
+
+.offer-slider__inner {
+    display: flex;
+
+    column-gap: 30px;
+    margin-bottom: 152px;
+}
+
+.offer-slider__item {
+    padding: 56px 40px 68px;
+    text-align: center;
+}
+
+.offer-slider__subtitle {
+    @extend %os-700;
+    margin: 24px 0 12px;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $title;
+}
+
+.offer-slider__desc {
+    font-size: 18px;
+    line-height: 25px;
+    color: $title;
+}
+
+.offer-slider__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 33px;
+}
+
+.offer-slider__box {
+    max-width: 716px;
+}
+
+.offer-slider__slogan {
+    font-size: 20px;
+    line-height: 27px;
+    color: $title;
+    margin-bottom: 30px;
+}
+
+.offer-slider__text {
+    font-size: 18px;
+    line-height: 25px;
+    color: $title;
+}
+
+.offer-slider__info-title,
+.orientation-top__title,
+.quests__title {
+    @extend %osc-700;
+    font-size: 72px;
+    line-height: 98px;
+    text-transform: uppercase;
+    color: $title;
+}
+
+.orientation-top {
+    margin-bottom: 60px;
+}
+
+.orientation-top__title {
+    margin-bottom: 12px;
+}
+
+.orientation-top__box span:nth-child(1) {
+    @extend %osc-300;
+    font-size: 48px;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: $title;
+}
+
+.orientation-top__box span:nth-child(2) {
+    @extend %osc-300;
+    font-size: 48px;
+    line-height: 65px;
+    color: $title;
+    margin-left: 40px;
+}
+
+.orientation {
+    background-color: $accent;
+    margin-bottom: 68px;
+}
+
+.orientation__content {
+    display: flex;
+    column-gap: 85px;
+}
+
+.orientation__content-img {
+    width: 467px;
+    object-fit: cover;
+}
+
+.orientation__content-box {
+    max-width: 881px;
+}
+
+.orientation__btn {
+    @extend %osc-700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: $accent;
+    height: 53px;
+    border: 2px solid #FFFFFF;
+}
+
+.orientation__btn.active {
+    color: $title;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.orientation__btn-box {
+    display: flex;
+    margin: 51px 0 38px;
+}
+
+.orientation__content-text {
+    color: #FFFFFF;
+
+    span {
+        display: block;
+        text-transform: uppercase;
+    }
+}
+
+.quests__top {
+    margin-bottom: 96px;
+}
+
+.quests__top-text {
+    color: $title;
+}
+
+.quests__title {
+    margin-bottom: 38px;
+}
+
+.quests__content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 158px;
+}
+
+.quests__subtitle {
+    @extend %osc-300;
+    font-size: 48px;
+    line-height: 65px;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+
+.quests__item-title {
+    display: block;
+    margin: 20px 0;
+}
+
+.quests__item {
+    font-size: 16px;
+    line-height: 22px;
+    color: $title;
+}
+
+.quests__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $title;
+}
+
+.quests__link {
+    margin-top: 30px;
+    @extend %os-700;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    color: $accent;
+    border: 2px solid $accent;
+    transition: border color .3s;
+
+    &:hover {
+        transition: border color .3s;
+        color: darken($color: $accent, $amount: 12%);
+        border: 2px solid darken($color: $accent, $amount: 12%);
+    }
+}
+
+
 /* FOOTER */
 
 .footer {
