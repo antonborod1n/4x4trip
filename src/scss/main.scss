@@ -650,39 +650,39 @@
 
 /* QUEST-PAGE */
 
-.offer-slider {
+.offer__slider {
     padding-bottom: 108px;
 }
 
-.offer-slider__item {
-    width: 328px;
+.offer-slider__inner .offer-slider__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 390px;
     position: relative;
     background: #FFFFFF;
     border: 6px solid $accent;
     transition: all .5s;
     cursor: pointer;
-
+    z-index: 1;
 }
 
-.offer-slider__item:hover:after {
-    transform: translate(-10px, -10px);
-    transition: all .5s;
+.offer-slider__item-box {
+    width: 250px;
+    background: #FFFFFF;
 }
 
-.offer-slider__item:after {
-    border: 13px solid $accent;
-    content: "";
-    background-color: $accent;
-    display: block;
-    position: absolute;
-    right: -16px;
-    top: 8px;
-    bottom: -16px;
-    z-index: -1;
-    width: 328px;
+.offer-slider {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 152px;
 }
 
-.offer-slider {}
+.offer-slider__item-decor {
+    border-right: 13px solid $accent;
+    border-bottom: 13px solid $accent;
+}
 
 .offer-slider__title {
     @extend %title;
@@ -691,14 +691,7 @@
 
 .offer-slider__inner {
     display: flex;
-
     column-gap: 30px;
-    margin-bottom: 152px;
-}
-
-.offer-slider__item {
-    padding: 56px 40px 68px;
-    text-align: center;
 }
 
 .offer-slider__subtitle {
@@ -951,13 +944,12 @@
     color: $title;
 }
 
-.slider {
+.team__slider {
     padding-bottom: 113px;
 }
 
-.team__slider {
-    display: flex;
-    column-gap: 10px;
+.team-slider {
+    position: relative;
 }
 
 .team__slider-box {

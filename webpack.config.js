@@ -7,7 +7,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
-    index_catalog: path.resolve(__dirname, './src/index_catalog.js'),
+    index_subacromial: path.resolve(__dirname, './src/index_subacromial.js'),
     index_product: path.resolve(__dirname, './src/index_product.js'),
     index_quests: path.resolve(__dirname, './src/index_quests.js'),
     index_team: path.resolve(__dirname, './src/index_team.js'),
@@ -25,9 +25,9 @@ module.exports = {
       chunks: ['main']
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/catalog.html'),
-      filename: 'catalog.html',
-      chunks: ['index_catalog']
+      template: path.resolve(__dirname, './src/subacromial.html'),
+      filename: 'subacromial.html',
+      chunks: ['index_subacromial']
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/product.html'),
