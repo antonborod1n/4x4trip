@@ -108,6 +108,18 @@ body {
     margin-top: 210px;
 }
 
+.page-title-upper {
+    @extend %os-700;
+    font-size: 128px;
+    line-height: 174px;
+    text-transform: uppercase;
+}
+
+.page-title-decor {
+    display: inline;
+    color: $accent;
+}
+
 .page-slogan {
     @extend %os-600;
     font-size: 32px;
