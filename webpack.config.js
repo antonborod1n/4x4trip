@@ -8,10 +8,13 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
     index_subacromial: path.resolve(__dirname, './src/index_subacromial.js'),
-    index_product: path.resolve(__dirname, './src/index_product.js'),
+    index_calculation: path.resolve(__dirname, './src/index_calculation.js'),
     index_quests: path.resolve(__dirname, './src/index_quests.js'),
     index_team: path.resolve(__dirname, './src/index_team.js'),
     index_activity: path.resolve(__dirname, './src/index_activity.js'),
+    index_contact: path.resolve(__dirname, './src/index_contact.js'),
+    index_sertificate: path.resolve(__dirname, './src/index_sertificate.js'),
+    index_sertificate1: path.resolve(__dirname, './src/index_sertificate1.js'),
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -30,9 +33,9 @@ module.exports = {
       chunks: ['index_subacromial']
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/product.html'),
-      filename: 'product.html',
-      chunks: ['index_product']
+      template: path.resolve(__dirname, './src/calculation.html'),
+      filename: 'calculation.html',
+      chunks: ['index_calculation']
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/quests.html'),
@@ -48,6 +51,21 @@ module.exports = {
       template: path.resolve(__dirname, './src/activity.html'),
       filename: 'activity.html',
       chunks: ['index_activity']
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/contact.html'),
+      filename: 'contact.html',
+      chunks: ['index_contact']
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/sertificate.html'),
+      filename: 'sertificate.html',
+      chunks: ['index_sertificate']
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/sertificate1.html'),
+      filename: 'sertificate1.html',
+      chunks: ['index_sertificate1']
     }),
 
     new CleanWebpackPlugin(),

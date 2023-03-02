@@ -49,6 +49,35 @@ body {
     }
 }
 
+/* BACKGROUND IMAGE */
+
+.class-page {
+    background-image: url(../images/top-bg/1.png);
+}
+
+.sertificate1-page {
+    background-image: url(../images/top-bg/2.png);
+}
+
+.quests-page {
+    background-image: url(../images/top-bg/3.png);
+}
+
+.sertificate-page {
+    background-image: url(../images/top-bg/4.png);
+}
+
+.calculation-page {
+    background-image: url(../images/top-bg/5.png);
+}
+
+.contact-page {
+    background-image: url(../images/top-bg/6.png);
+}
+
+.subacromial-page {
+    background-image: url(../images/top-bg/7.png);
+}
 
 .list-item {
     position: relative;
@@ -71,7 +100,6 @@ body {
     text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
     margin-top: 240px;
 }
-
 
 .page-slogan {
     @extend %os-600;
