@@ -1584,7 +1584,7 @@ span.subacromial-content__decor {
 /* CALC PAGE */
 
 .calc-contact {
-    margin-top: 112px;
+    margin: 112px 0 145px;
 }
 
 .calc-contact__inner {
@@ -1671,28 +1671,109 @@ span.subacromial-content__decor {
 }
 
 .filter__item-radio,
-.filter__item-checkbox {
+.filter__item-input {
     cursor: pointer;
-    margin: 0 13px 0 0;
+}
+
+.filter__item-text {
+    margin-left: 34px;
+}
+
+.filter__item-input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked+.filter__item-checkbox {
+        background-image: url(../images/icons/ok.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $accent;
+        border: 1px solid $accent;
+    }
+
+    &:checked+.filter__item-radio {
+        background-image: url(../images/icons/radio.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid #CED9DE;
+    }
+}
+
+.filter__item-checkbox {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: #FFFFFF;
+    border: 1px solid #CED9DE;
+    border-radius: 2px;
+}
+
+.filter__item-radio {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: #FFFFFF;
+    border: 1px solid #CED9DE;
+    border-radius: 50%;
 }
 
 .filter__label-measure:nth-child(2) {
     margin-left: 60px;
 }
 
+.format {}
 
+.format__title {
+    @extend %title;
+    margin-bottom: 21px;
+}
 
+.format__text-top {
+    max-width: 1184px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 51px;
+}
 
+.format__text {
+    margin-bottom: 69px;
+}
 
+.format__subtitle {
+    position: relative;
+    @extend %osc-300;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    padding-top: 16px;
+    margin-bottom: 21px;
 
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 55px;
+        height: 4px;
+        background-color: $accent;
+    }
+}
 
+.format__btn {
+    @extend %btn-accent;
+    padding: 16px 60px;
+    margin-top: 30px;
+}
 
 .footer-banner {
     background-image: url(../images/content/bg-format.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    margin-top: 214px;
+    margin-top: 114px;
     padding: 94px 0 183px;
 }
 
@@ -1758,7 +1839,6 @@ span.subacromial-content__decor {
         border: 1px solid darken($color: $accent, $amount: 12%);
     }
 }
-
 
 .footer-banner__items {
     display: flex;
