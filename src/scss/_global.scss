@@ -101,6 +101,13 @@ body {
     margin-top: 240px;
 }
 
+.page-title {
+    @extend %page-title;
+    max-width: 1290px;
+    margin: 0 auto;
+    margin-top: 210px;
+}
+
 .page-slogan {
     @extend %os-600;
     font-size: 32px;

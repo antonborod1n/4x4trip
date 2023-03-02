@@ -1,1 +1,207 @@
-<h1>Hello calc</h1>
+<section class="calc-contact">
+    <div class="container">
+        <div class="calc-contact__inner">
+            <div class="calc-contact__item">
+                <h2 class="calc-contact__title">Контактные данные</h2>
+                <form class="calc-contact-form form" action="#">
+                    <div class="calc-contact__box calc-contact__name">
+                        <input class="calc-contact__input form-element form__input" type="text" placeholder="Имя">
+                    </div>
+                    <div class="calc-contact__box calc-contact__email">
+                        <input class="calc-contact__input form-element form__input" type="email" placeholder="Email">
+                    </div>
+                    <div class="calc-contact__box calc-contact__number">
+                        <input class="calc-contact__input form-element form__input" type="text"
+                            placeholder="Номер телефона">
+                    </div>
+                    <div class="calc-contact__box calc-contact__nmessage">
+                        <textarea class="calc-contact__textarea form-element form__textarea" name="contact-textarea"
+                            id="textarea" placeholder="Комментарии и пожалания"></textarea>
+                        <input class="calc-contact__submit-btn form__submit-btn" type="submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
+
+            <div class="calc-contact__item">
+                <h2 class="calc-contact__subtitle">Расскажите о вашем мероприятии</h2>
+                <form class="calc-contact__filter filter" action="#">
+                    <div class="filter__item">
+                        <div class="filter__item-title">Количество участников:</div>
+                        <div class="filter__item-box filter__item-box-memb">
+                            <label for="memb1">
+                                <input class="filter__item-radio" id="memb1" type="radio">
+                                1-10
+                            </label>
+                            <label for="memb2">
+                                <input class="filter__item-radio" id="memb2" type="radio">
+                                10-20
+                            </label>
+                            <label for="memb3">
+                                <input class="filter__item-radio" id="memb3" type="radio">
+                                20-30
+                            </label>
+                            <label for="memb4">
+                                <input class="filter__item-radio" id="memb4" type="radio">
+                                30-40
+                            </label>
+                            <label for="memb5">
+                                <input class="filter__item-radio" id="memb5" type="radio">
+                                40-50
+                            </label>
+                            <label for="memb6">
+                                <input class="filter__item-radio" id="memb6" type="radio">
+                                50-60
+                            </label>
+                            <label for="memb7">
+                                <input class="filter__item-radio" id="memb7" type="radio">
+                                Больше 60
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter__item">
+                        <div class="filter__item-title">Приемы пищи</div>
+                        <div class="filter__item-box filter__item-box-meals">
+                            <label for="meals1">
+                                <input class="filter__item-checkbox" id="meals1" type="checkbox">
+                                Завтрак
+                            </label>
+                            <label for="meals2">
+                                <input class="filter__item-checkbox" id="meals2" type="checkbox">
+                                Обед
+                            </label>
+                            <label for="meals3">
+                                <input class="filter__item-checkbox" id="meals3" type="checkbox">
+                                Ужин
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter__item">
+                        <div class="filter__item-title">Формат мероприятия</div>
+                        <div class="filter__item-box filter__item-box-format">
+                            <label for="format1">
+                                <input class="filter__item-radio" id="format1" type="radio">
+                                Джип-спринт
+                            </label>
+                            <label for="format2">
+                                <input class="filter__item-radio" id="format2" type="radio">
+                                Спортивное ориентирование
+                            </label>
+                            <label for="format3">
+                                <input class="filter__item-radio" id="format3" type="radio">
+                                Квест
+                            </label>
+                            <label for="format4">
+                                <input class="filter__item-radio" id="format4" type="radio">
+                                Мультиактив
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter__item">
+                        <div class="filter__item-title">Предпочтительные направления (МО)</div>
+                        <div class="filter__item-box filter__item-box-direction">
+                            <label for="direction1">
+                                <input class="filter__item-checkbox" id="direction1" type="checkbox">
+                                ЮГ
+                            </label>
+                            <label for="direction2">
+                                <input class="filter__item-checkbox" id="direction2" type="checkbox">
+                                ВОСТОК
+                            </label>
+                            <label for="direction3">
+                                <input class="filter__item-checkbox" id="direction3" type="checkbox">
+                                СЕВЕР
+                            </label>
+                            <label for="direction4">
+                                <input class="filter__item-checkbox" id="direction4" type="checkbox">
+                                ЗАПАД
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter__item">
+                        <div class="filter__item-title">Мероприятие должно проходить в непосредственной близости с
+                            отелем?</div>
+                        <div class="filter__item-box filter__item-box-measure">
+                            <label class="filter__label-measure" for="measure1">
+                                <input class="filter__item-radio filter__item-measure" id="measure1" type="radio">
+                                ДА
+                            </label>
+                            <label class="filter__label-measure" for="measure2">
+                                <input class="filter__item-radio filter__item-measure" id="measure2" type="radio">
+                                НЕТ
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="format">
+    <div class="container">
+        <h2 class="format__title">ВЫБЕРИ СВОЙ ФОРМАт</h2>
+        <p class="format__text">
+            Заказывая у нас корпоративное или любое другое мероприятие, вы в первую очередь думаете в каком формате оно
+            пройдёт. Мы готовы предложить
+            вам 4 разных варианта, а также придумать что-то абсолютно уникальное, подходящее именно вам!
+        </p>
+        <div class="format__content">
+            <h3 class="format__subtitle">Джип-спринТ</h3>
+            <p class="format__text">
+                Это самый простой вариант проведения корпоративного отдыха. В нём может неограниченное количество машин.
+                Участники собираются на точке старта, проходят инструктаж и едут организованныой колонной по маршруту,
+                естественно, застревают, вынимают друг друга, общаются, фотографируются. Участники сами управляют
+                джипами. Они могут меняться за рулём столько раз сколько захотят. Это можно сделать организованно, можно
+                отдельно для каждой машины. Продолжительность поездки по бездорожью может быть абсолютно любой. От 1
+                часа до 12 часов. В лагере или по дороге может быть организована полевая кухня.
+            </p>
+            <h3 class="format__subtitle">Спортивное ориентирование или трофи-соревнование</h3>
+            <p class="format__text">
+                Самый популярный вариант проведения корпоративного отдыха. Количество машин участников от 3-х до
+                бесконечности. После прохождения стандартного инструктажа участникам выдаются задания — чаще всего это
+                подробная карта местности с комментариями, планшет, ручки, бумага. К этому набору можно добавить
+                компасы, GPS-навигаторы, планшетные компьютеры. На карту нанесены точки или трек, на которые участники
+                должны подъехать. Условия соревнований всегда разные, всё зависит только от вас и поставленных задач.
+                Участники могут на точке искать метку, предмет, условное обозначение и т.д. Найдя искомое, участники
+                фотографируются на месте определенным образом. Задача команд посетить как можно больше точек за
+                ограниченное время и сделать на них фотографии. Победителем становится та команда, которая «взяла»
+                наибольшее количество точек. Всё осложняется сложностью преодоления бездорожья, самостоятельным выбором
+                и преодолением маршрута. Участники сами за рулём автомобилей, они сами выбирают в какой
+                последовательности ехать на точки, сами выкапывают машины из грязевых ловушек.
+            </p>
+            <h3 class="format__subtitle">Квест на джипах</h3>
+            <p class="format__text">
+                Самый сложный для организации формат, но при этом самый увлекательный. Квест на внедорожниках в лесу —
+                это по сути вариант живого квеста и спортивного ориентирования одновременно. Задача участников найти в
+                лесу спрятанные артефакты, ключи, части головоломки, сложить их и получить ответ. Квесты делятся на 2
+                типа — это вариант квеста, в котором игрокам предстоит поочерёдно отгадывая загадки,двигаться от одной
+                точки к другой и второй вариант, когда команды собирают что-то (например ключи) на протяжении всей игры
+                (Форд Боярд). все квесты всегда индивидуальны, разрабатываются под определенное количество команд.
+                Каждой команде выдаётся индивидуальный пакет заданий (они могут пересекаться у участников), на точках
+                могут быть живые чеки (т.е. люди, которые будут загадывать загадки, предлагать пострелять из лука или
+                винтовки, чтобы заработать баллы, выдать необходимое снаряжение или подсказку по ходу игры), сам
+                внедорожный маршрут должен отвечать определенным требованиям, чтобы игра гармонично сочеталась с
+                настоящим бездорожьем, на котором игроки могут застрять и потратить большое количество времени на
+                откапывание своего автомобиля.
+            </p>
+            <button class="format__btn">Подробнее о трофи-турах</button>
+            <h3 class="format__subtitle">Мультиактив</h3>
+            <p class="format__text">
+                Формат, который включает в себя сразу несколько элементов. Это джип-спринт или трофи-соревнование, а
+                также какие-то активности. Например: стрельба из лука, винтовки, рогатки. Перетягивание каната, метание
+                дротиков, импровизированная школа внедорожного и полевого вождения, мастер-класс по покорению бездорожья
+                и т.п. В этом случае может быть несколько номинаций победителей. Продолжительность такого мероприятия
+                практически не ограничена. Ваш корпоратив может начаться в одном месте, а завершиться совсем в другом.
+                Количество участников при таком варианте корпоратива — неограничено и чем больше, тем лучше! Такое
+                глобальное мероприятие на природе проводится всегда с кейтерингом, едой на природе, ведущим, музыкой и
+                прочими атрибутами настоящего праздника. Подробнее о наших возможностях вы можете прочитать в разделе
+                ОПЦИИ.
+            </p>
+            <button class="format__btn">Подробнее о квесте на джипах</button>
+        </div>
+    </div>
+</section>
