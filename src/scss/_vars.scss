@@ -114,3 +114,28 @@ $red: #EC2B2B;
     text-transform: uppercase;
     color: $title;
 }
+
+
+@media(max-width: 998px) {
+    %title {
+        font-size: 34px;
+        line-height: 50px;
+    }
+}
+
+@media(max-width: 450px) {
+    %title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    %btn-accent {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    %btn {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

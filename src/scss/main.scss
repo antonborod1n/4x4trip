@@ -20,7 +20,7 @@
 .top__inner {
     max-width: 703px;
     margin: 0 auto;
-    text-align-last: left;
+    text-align: left;
 }
 
 .top__content-box {
@@ -292,6 +292,10 @@
     padding-left: 50px;
 }
 
+.offer__slider-item:last-child {
+    margin-bottom: 0px;
+}
+
 .offer__slider-link {
     @extend %btn;
     font-size: 20px;
@@ -327,13 +331,9 @@
 }
 
 .bye-certificate__title {
-    @extend %title;
-    text-align-last: left;
-    margin-bottom: 52px;
-}
-
-.bye-certificate__title {
     @extend %subtitle;
+    text-align: left;
+    margin-bottom: 52px;
 }
 
 .bye-certificate__line {
@@ -365,6 +365,8 @@
     column-gap: 28px;
 }
 
+
+
 .bye-certificate__content-title {
     @extend %os-700;
     font-size: 20px;
@@ -392,16 +394,17 @@
 }
 
 .bye-certificate__item {
+    flex-basis: 365px;
     padding: 40px 30px;
     border: 5px solid #FFAF3E;
     border-radius: 5px;
 }
 
 .bye-certificate__inner {
-    margin-bottom: 103px;
     display: flex;
-    gap: 20px;
     justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 103px;
 }
 
 .bye-certificate__box {
@@ -498,6 +501,12 @@
     margin-bottom: 20px;
 }
 
+.package__text {
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
 .package__btn {
     @extend %btn-accent;
     padding: 12px 30px;
@@ -574,6 +583,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -595,17 +605,13 @@
     }
 }
 
-.importantly {}
+.importantly {
+    margin-bottom: 215px;
+}
 
 .importantly__inner {
     padding: 40px;
     background: #F9F9F9;
-}
-
-.importantly__box {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 100px;
 }
 
 .importantly__title {
@@ -614,6 +620,27 @@
 
 .importantly__item {
     margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.importantly__box {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+}
+
+.importantly__col-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.importantly__col-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.importantly__btn {
+    grid-area: 2 / 1 / 3 / 3;
 }
 
 .importantly__btn {
