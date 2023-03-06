@@ -850,6 +850,7 @@
     display: flex;
     justify-content: space-between;
     column-gap: 158px;
+    margin-bottom: 264px;
 }
 
 .quests__subtitle {
@@ -1011,6 +1012,10 @@
 }
 
 .team__gallery {
+    margin-bottom: 202px;
+}
+
+.team__gallery-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1023,7 +1028,9 @@
     object-fit: cover;
 }
 
-.activity {}
+.activity {
+    margin-bottom: 264px;
+}
 
 .activity__title {
     @extend %title;
@@ -1268,7 +1275,9 @@ span.subacromial-content__decor {
     }
 }
 
-.gift {}
+.gift {
+    margin-bottom: 160px;
+}
 
 .gift__title {
     @extend %title;
@@ -1546,7 +1555,9 @@ span.subacromial-content__decor {
     }
 }
 
-.contact__form {}
+.contact__form {
+    margin-bottom: 245px;
+}
 
 .contact__form-title {
     @extend %osc-300;
