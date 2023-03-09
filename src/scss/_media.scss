@@ -38,6 +38,11 @@
     .menu__link {
         padding: 15px;
     }
+
+    .footer-banner__inner {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 70px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -162,7 +167,7 @@
         flex-basis: 100%;
     }
 
-    .form {
+    .contact-form {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 65px 65px 100%;
@@ -189,6 +194,23 @@
     .contact-delivery {
         margin-bottom: 100px;
     }
+
+    .calc-contact__inner {
+        flex-wrap: wrap;
+        gap: 100px 0px;
+    }
+
+    .calc-contact__item {
+        flex-basis: 100%;
+    }
+
+    .calc-contact-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 65px) 100%;
+        gap: 24px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -287,6 +309,26 @@
 
     .importantly__btn {
         grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .footer-banner__box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .footer-banner__item-season {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 166px;
+        row-gap: 50px;
+    }
+
+    .footer-banner__item-season {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 166px;
+        gap: 50px;
     }
 }
 
@@ -577,6 +619,78 @@
 
     .contact__form {
         margin-bottom: 195px;
+    }
+
+    .calc-contact {
+        margin: 40px 0 50px;
+    }
+
+    .calc-contact__title {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .calc-contact__inner {
+        gap: 60px 0px;
+    }
+
+    .calc-contact__subtitle {
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .filter__item-title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 24px;
+    }
+
+    .filter__item-text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .format__text-top {
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    .format__subtitle {
+        font-size: 18px;
+        line-height: 25px;
+        padding-top: 12px;
+        margin-bottom: 14px;
+    }
+
+    .format__text {
+        margin-bottom: 24px;
+    }
+
+    .format__btn {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .footer-banner__title {
+        font-size: 30px;
+        line-height: 150%;
+    }
+
+    .footer-banner__slogan {
+        font-size: 26px;
+        line-height: 150%;
+        margin-bottom: 43px;
+    }
+
+    .footer-banner__btn-rew,
+    .footer-banner__btn-portfolio {
+        width: 100%;
+    }
+
+    .footer-banner__item {
+        text-align: center;
     }
 
     .footer {

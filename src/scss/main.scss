@@ -186,7 +186,7 @@
 
 .menu__btn {
     display: none;
-    width: 25px;
+    min-width: 25px;
     height: 25px;
     background-image: url(../images/icons/burger.svg);
     background-repeat: no-repeat;
@@ -1667,6 +1667,10 @@ span.subacromial-content__decor {
 
 .filter__item {
     margin-bottom: 32px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }
 
 .filter__item-title {
@@ -1776,6 +1780,10 @@ span.subacromial-content__decor {
 
 .format__text {
     margin-bottom: 69px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }
 
 .format__subtitle {
@@ -2092,8 +2100,8 @@ ol.activ-sertificate__list {
 
 .footer-banner__inner {
     display: grid;
-    grid-template-columns: 535px 700px;
-    column-gap: 216px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
     color: #FFFFFF;
 }
 
