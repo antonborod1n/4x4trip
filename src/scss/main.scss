@@ -1331,9 +1331,9 @@ span.subacromial-content__decor {
 
 .contact-top__inner {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr;
-    column-gap: 90px;
+    gap: 70px 90px;
     color: $title;
 }
 
@@ -1418,13 +1418,13 @@ span.subacromial-content__decor {
 .contact-address__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    column-gap: 162px;
+    flex-wrap: wrap;
+    gap: 50px 162px;
     color: $title;
 }
 
 .contact-address__item {
-    flex-basis: 380px;
+    flex-basis: 358px;
     font-size: 18px;
     line-height: 25px;
     font-style: normal;
