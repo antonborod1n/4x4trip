@@ -907,6 +907,7 @@
 
 .team__title {
     @extend %osc-700;
+    @extend %title;
     font-size: 48px;
     line-height: 65px;
     text-align: center;
@@ -918,7 +919,7 @@
 .team__inner {
     display: flex;
     justify-content: space-between;
-    column-gap: 30px;
+    gap: 30px;
 }
 
 .team__item {
@@ -932,7 +933,8 @@
 .team__box {
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px 20px;
     margin-bottom: 24px;
 }
 
@@ -960,6 +962,7 @@
 }
 
 .team__slider {
+    display: none;
     padding-bottom: 113px;
 }
 
@@ -1012,6 +1015,7 @@
 }
 
 .team__gallery {
+    display: none;
     margin-bottom: 202px;
 }
 
@@ -1953,6 +1957,7 @@ span.sertificate__decor {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
