@@ -1172,9 +1172,6 @@
     text-transform: uppercase;
     color: $title;
     margin-bottom: 27px;
-}
-
-.subacromial__item {
     position: relative;
     padding-left: 50px;
 
@@ -1200,11 +1197,8 @@
 }
 
 .subacromial-content__img {
-    object-fit: cover;
-}
-
-.subacromial-content__box {
     max-width: 591px;
+    object-fit: cover;
 }
 
 .subacromial-content__img-box {
@@ -1239,6 +1233,10 @@
 
 .subacromial-content__text {
     margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
 
     span {
         @extend %os-700;
@@ -1311,6 +1309,7 @@ span.subacromial-content__decor {
 }
 
 .gift__img {
+    max-width: 573px;
     object-fit: cover;
 }
 
@@ -1880,7 +1879,7 @@ span.subacromial-content__decor {
 
 .sertificate-form {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 65px 65px 335px;
     gap: 44px 0px;
 }
@@ -1954,6 +1953,7 @@ span.sertificate__decor {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .sertificate__info-bottom-title {
@@ -1962,6 +1962,10 @@ span.sertificate__decor {
     line-height: 41px;
     text-transform: uppercase;
     color: $title;
+}
+
+.sertificate__info-bottom-img-col {
+    display: none;
 }
 
 /*ACTIV SERTIFICATE */
@@ -1991,7 +1995,8 @@ span.sertificate__decor {
 }
 
 .activ-sertificate__img {
-    margin-bottom: 42px;
+    width: 100%;
+    margin-bottom: 35px;
 }
 
 .activ-sertificate__box {
@@ -2003,6 +2008,7 @@ span.sertificate__decor {
 
 .activ-sertificate__container {
     position: relative;
+    min-width: 507px;
 }
 
 .activ-sertificate__btn {
@@ -2024,16 +2030,22 @@ span.sertificate__decor {
 .activ-sertificate__btn-numb:before {
     content: url(../images/icons/line.svg);
     position: absolute;
-    top: 169px;
-    left: 120px;
+    top: 179px;
+    left: 146px;
 }
 
 .activ-sertificate__btn-date:before {
     content: url(../images/icons/line1.svg);
     position: absolute;
-    bottom: 36px;
-    right: 133px;
+    bottom: -108px;
+    right: 102px;
 }
+
+.activ-sertificate__btn-numb:before,
+.activ-sertificate__btn-date:before {
+    display: none;
+}
+
 
 .activ-sertificate-form {
     display: grid;

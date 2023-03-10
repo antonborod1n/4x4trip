@@ -43,6 +43,14 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 70px;
     }
+
+    .subacromial-content__img {
+        max-width: 400px;
+    }
+
+    .sertificate__inner {
+        column-gap: 15px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -211,6 +219,153 @@
         gap: 24px;
     }
 
+    .subacromial__title {
+        padding: 68px 0 54px;
+    }
+
+    .subacromial__top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subacromial-content__item {
+        gap: 17px;
+    }
+
+    .subacromial-content__item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .subacromial-content__item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .subacromial-content__img-box-right::after,
+    .subacromial-content__img-box-left::after {
+        display: none;
+    }
+
+    .subacromial-content__img {
+        max-width: 100%;
+    }
+
+    .subacromial-content__title {
+        padding: 62px 0 53px;
+    }
+
+    .subacromial-content__item {
+        margin-bottom: 24px;
+    }
+
+    .gift {
+        margin-bottom: 150px;
+    }
+
+    .gift__item {
+        gap: 16px 0px;
+    }
+
+    .gift__item:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .gift__item:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .gift__item-right {
+        margin-bottom: 24px;
+    }
+
+    .gift__img,
+    .gift__img-box {
+        max-width: 100%;
+    }
+
+    .subacromial-content__item {
+        padding: 0px;
+    }
+
+    .subacromial-content {
+        margin-bottom: 100px;
+    }
+
+    .gift__item-left {
+        margin-bottom: 44px;
+    }
+
+    .gift__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+    }
+
+    .sertificate__inner {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 100%;
+        column-gap: 0px;
+    }
+
+    .sertificate__info-inner {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 0px 58px;
+        margin-bottom: 80px;
+    }
+
+    .sertificate__item-box {
+        order: -1;
+        margin-bottom: 35px;
+    }
+
+    .sertificate__item {
+        width: 100%;
+    }
+
+    .sertificate__info-bottom {
+        row-gap: 24px;
+    }
+
+    .sertificate__info-bottom-title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .sertificate__info-bottom-img {
+        display: none;
+    }
+
+    .sertificate__info-bottom-img-col {
+        display: block;
+    }
+
+    .activ-sertificate__inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+        margin-bottom: 120px;
+    }
+
+    .activ-sertificate {
+        margin: 69px 0 200px;
+    }
+
+    .activ-sertificate__item-box {
+        justify-self: center;
+        max-width: 553px;
+    }
+
+    .activ-sertificate__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .activ-sertificate__container {
+        margin-bottom: 49px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -329,6 +484,22 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 166px;
         gap: 50px;
+    }
+
+    .subacromial-page__title-decor {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .activ-sertificate__container {
+        min-width: 100%;
+    }
+
+    .activ-sertificate__btn {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 7px 18px;
+
     }
 }
 
@@ -648,8 +819,8 @@
     }
 
     .filter__item-text {
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 13px;
+        line-height: 24px;
     }
 
     .format__text-top {
@@ -691,6 +862,150 @@
 
     .footer-banner__item {
         text-align: center;
+    }
+
+    .subacromial__title {
+        padding: 33px 0 25px;
+    }
+
+    .subacromial__item {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 21px;
+
+        &:before {
+            top: -8px;
+        }
+    }
+
+    .subacromial-content__title {
+        padding: 32px 0 23px;
+    }
+
+    .subacromial-content__link {
+        display: block;
+        padding: 16px 25px;
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    span.subacromial-content__decor {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .subacromial-content {
+        margin-bottom: 24px;
+    }
+
+    .gift__box .gift__title {
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    .gift__item-left {
+        margin-bottom: 24px;
+    }
+
+    .sertificate {
+        margin: 32px 0 52px;
+    }
+
+    .sertificate__title {
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .sertificate__present-img {
+        margin: 0 auto 20px;
+        max-width: 103px;
+    }
+
+    .sertificate__item-text,
+    .sertificate__item-price {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .sertificate-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 42px 42px 100%;
+        gap: 24px 0px;
+    }
+
+    .sertificate-form__personal {
+        margin-bottom: 35px;
+    }
+
+    .sertificate__present-img-sert {
+        max-width: 184px;
+    }
+
+    .sertificate__info-item {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    ol.sertificate__info-list {
+        margin: 0 0 0 20px;
+    }
+
+    .sertificate__info-box {
+        padding: 16px;
+        margin-bottom: 52px;
+    }
+
+    span.sertificate__decor {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 14px;
+    }
+
+    .sertificate__info-inner {
+        margin-bottom: 12px;
+    }
+
+    .sertificate__info {
+        margin-bottom: 175px;
+    }
+
+    .activ-sertificate {
+        margin: 41px 0 142px;
+    }
+
+    .activ-sertificate__text {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 39px;
+        text-align: center;
+    }
+
+    .activ-sertificate__btn {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .activ-sertificate-form {
+        gap: 24px 0px;
+    }
+
+    .activ-sertificate__title,
+    .activ-sertificate__subtitle {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .activ-sertificate__inner {
+        margin-bottom: 46px;
+    }
+
+    ol.activ-sertificate__list {
+        margin-bottom: 21px;
     }
 
     .footer {

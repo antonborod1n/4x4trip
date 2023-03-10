@@ -170,9 +170,29 @@ body {
     right: 130px;
 } */
 
+@media(max-width: 968px) {
+    .page-title-upper {
+        font-size: 80px;
+        line-height: 100px;
+    }
+}
+
 @media(max-width: 450px) {
     body {
         font-size: 13px;
         line-height: 18px;
+    }
+
+    .top.sertificate-page {
+        min-height: 430px;
+    }
+
+    .page-title-upper {
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    .page-title-upper {
+        margin-top: 10px;
     }
 }
