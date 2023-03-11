@@ -1047,11 +1047,6 @@
     color: $title;
 }
 
-.activity__history {
-    display: flex;
-    margin-bottom: 117px;
-}
-
 .activity__tabs {
     display: flex;
     flex-direction: column;
@@ -1063,7 +1058,8 @@
     border: none;
     padding: 27px 22px;
     height: 84px;
-    background: $accent;
+    background-color: $accent;
+    transition: all .3s;
 
     div {
         @extend %osc-700;
@@ -1079,9 +1075,11 @@
     }
 
     &.active {
-        background: #FFFFFF;
+        transition: background-color .3s;
+        background-color: #FFFFFF;
 
         div {
+            transition: color .3s;
             color: $accent;
         }
     }
@@ -1090,8 +1088,10 @@
 .activity__history {
     display: grid;
     grid-template-columns: 373px 1fr;
-    grid-template-rows: 52px repeat(2, 1fr);
+    grid-template-rows: 52px 1fr;
+    /* grid-template-rows: 52px repeat(2, 1fr); */
     gap: 4px;
+    margin-bottom: 117px;
 }
 
 .activity__tabs {
@@ -1128,6 +1128,21 @@
 
 .activity__content {
     grid-area: 2 / 2 / 4 / 3;
+}
+
+.activity__content.active {
+    animation-name: smoothness;
+    animation-duration: 1s;
+}
+
+@keyframes smoothness {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .activity__slider {
