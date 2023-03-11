@@ -16,6 +16,12 @@
         line-height: 65px;
     }
 
+    .page-title__big {
+        font-size: 80px;
+        line-height: 100px;
+        margin-top: 150px;
+    }
+
     .top {
         min-height: 780px;
     }
@@ -51,11 +57,23 @@
     .sertificate__inner {
         column-gap: 15px;
     }
+
+    .offer-slider__info-title,
+    .orientation-top__title,
+    .quests__title {
+        font-size: 50px;
+        line-height: 72px;
+    }
 }
 
 @media (max-width: 1024px) {
     .top {
         min-height: 700px;
+    }
+
+    .page-slogan {
+        font-size: 27px;
+        line-height: 36px;
     }
 
     .menu__btn {
@@ -376,12 +394,41 @@
         line-height: 65px;
         margin-bottom: 40px;
     }
+
+    .orientation__content {
+        flex-wrap: wrap;
+    }
+
+    .orientation {
+        padding-bottom: 30px;
+    }
+
+    .offer-slider__title {
+        padding: 100px 0 50px;
+    }
+
+    .offer-slider__info {
+        align-items: flex-start;
+        gap: 21px;
+        flex-direction: column-reverse;
+    }
 }
 
 @media (max-width: 768px) {
     .page-title {
         font-size: 32px;
         line-height: 45px;
+    }
+
+    .page-title__big {
+        font-size: 46px;
+        line-height: 65px;
+        margin: 140px 0 12px;
+    }
+
+    .page-slogan {
+        font-size: 20px;
+        line-height: 27px;
     }
 
     .top {
@@ -519,13 +566,44 @@
     .team__item {
         width: 100%;
     }
+
+    .orientation__btn {
+        width: 50%;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 450px) {
+    .top__content-box {
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .top__content-link {
+        font-size: 14px;
+        line-height: 19px;
+        height: 54px;
+        padding: 6px;
+        width: 100%;
+    }
+
     .page-title {
         font-size: 26px;
         line-height: 35px;
         margin-top: 50px;
+    }
+
+    .page-title__big {
+        font-size: 26px;
+        line-height: 35px;
+        margin: 40px 0 12px;
+    }
+
+    .page-slogan {
+        font-size: 20px;
+        line-height: 27px;
     }
 
     .top {
@@ -1057,6 +1135,105 @@
         font-size: 13px;
         line-height: 18px;
     }
+
+    .orientation__content-img {
+        width: 100%;
+    }
+
+    .offer-slider__title {
+        padding: 40px 0 38px;
+    }
+
+    .offer-slider__info-title,
+    .orientation-top__title,
+    .quests__title {
+        font-size: 30px;
+        line-height: 41px;
+    }
+
+    .offer-slider__slogan {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+
+    .offer-slider__text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .offer-slider__info {
+        margin-bottom: 45px;
+    }
+
+    .orientation {
+        margin-bottom: 38px;
+    }
+
+    .orientation-top__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .orientation-top__box span:nth-child(1),
+    .orientation-top__box span:nth-child(2) {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .orientation-top__box span:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .quests__title {
+        margin-bottom: 12px;
+    }
+
+    .quests__top {
+        margin-bottom: 29px;
+    }
+
+    .quests__subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .quests__text,
+    .quests__item {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .quests__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 19px;
+        padding: 12px;
+        width: 100%;
+    }
+
+    .quests__content {
+        gap: 37px;
+        margin-bottom: 174px;
+    }
+
+    .activity {
+        margin-bottom: 185px;
+    }
+
+    .activity__title {
+        padding: 185px 0 21px;
+    }
+
+    .activity__text {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
 
     .footer {
         &-content__inner {

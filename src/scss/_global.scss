@@ -141,6 +141,7 @@ body {
 
 .activity-slogan {
     display: block;
+    text-align: center;
     @extend %osc-700;
     font-size: 48px;
     line-height: 65px;
@@ -170,10 +171,27 @@ body {
     right: 130px;
 } */
 
-@media(max-width: 968px) {
+@media(max-width: 1024px) {
     .page-title-upper {
         font-size: 80px;
         line-height: 100px;
+    }
+
+    .page-title__big {
+        font-size: 26px;
+        line-height: 35px;
+        margin: 40px 0 12px;
+    }
+
+    .page-slogan {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .activity-slogan {
+        font-size: 29px;
+        line-height: 37px;
+
     }
 }
 
@@ -195,4 +213,11 @@ body {
     .page-title-upper {
         margin-top: 10px;
     }
+
+    .activity-slogan {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 108px;
+    }
+
 }

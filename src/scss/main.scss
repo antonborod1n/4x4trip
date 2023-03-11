@@ -32,15 +32,12 @@
 
 .top__content-link {
     @extend %btn-accent;
+    gap: 10px;
     font-size: 20px;
     line-height: 27px;
     height: 68px;
     text-transform: uppercase;
     padding: 12px 30px;
-
-    span {
-        margin-left: 30px;
-    }
 }
 
 .header {
@@ -822,6 +819,7 @@
 
 .orientation__btn-box {
     display: flex;
+    flex-wrap: wrap;
     margin: 51px 0 38px;
 }
 
@@ -849,6 +847,7 @@
 .quests__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     column-gap: 158px;
     margin-bottom: 264px;
 }
@@ -881,7 +880,6 @@
 .quests__link {
     margin-top: 30px;
     @extend %os-700;
-    text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
     font-size: 20px;
@@ -962,7 +960,6 @@
 }
 
 .team__slider {
-    display: none;
     padding-bottom: 113px;
 }
 
@@ -1015,7 +1012,6 @@
 }
 
 .team__gallery {
-    display: none;
     margin-bottom: 202px;
 }
 
