@@ -21,6 +21,32 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
         },
     });
+    const teamSlider = new Swiper('.team__gallery-inner', {
+        slidesPerView: 5,
+        spaceBetween: 10,
+
+        breakpoints: {
+            350: {
+                slidesPerView: 1,
+            },
+
+            550: {
+                slidesPerView: 2,
+            },
+
+            850: {
+                slidesPerView: 3,
+            },
+
+            1250: {
+                slidesPerView: 4,
+            },
+
+            1450: {
+                slidesPerView: 5,
+            }
+        }
+    });
 
     let menuMain = document.querySelector('.header__bottom');
     let menuBtn = document.querySelector('.menu__btn');
