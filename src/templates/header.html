@@ -27,80 +27,132 @@
                 </a>
             </div>
             <a class="header__info-btn" href="#">активировать сертификат</a>
-            <button class="menu__btn"></button>
+            <button class="menu__btn open-nav-menu"></button>
         </div>
 
         <div class="header__bottom">
-            <nav class="header__menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Главная
-                        </a>
-                    </li>
-                    <li class="menu__item menu__item-drop">
-                        <a class="menu__link menu__link-drop" href="#">
-                            Джип- туры
-                        </a>
-                    </li>
-                    <li class="menu__item menu__item-drop">
-                        <a class="menu__link menu__link-drop" href="#">
-                            Корпоративы
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Отзывы
-                        </a>
-                    </li>
-                    <li class="menu__item menu__item-drop">
-                        <a class="menu__link menu__link-drop" href="#">
-                            Фото/Видео
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Команда
-                        </a>
-                    </li>
-                    <li class="menu__item menu__item-drop">
-                        <a class="menu__link menu__link-drop" href="#">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-overlay">
+            </div>
 
-            <ul class="header__social">
-                <li class="header__item">
-                    <a class="header__social-link" href="https://www.facebook.com/" target="_blank">
-                        <svg width="30" height="30">
-                            <use xlink:href="../images/icons/sprite.svg#facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a class="header__social-link" href="https://www.instagram.com/" target="_blank">
-                        <svg width="30" height="30">
-                            <use xlink:href="../images/icons/sprite.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a class="header__social-link" href="https://vk.com/" target="_blank">
-                        <svg width="30" height="30">
-                            <use xlink:href="../images/icons/sprite.svg#vk"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a class="header__social-link" href="https://www.youtube.com/" target="_blank">
-                        <svg width="31" height="31">
-                            <use xlink:href="../images/icons/sprite.svg#youtube"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <nav class="nav-menu">
+                <div class="nav-menu-top">
+                    <div class="header__menu-slogan">Проведение джип-туров - в любое время!</div>
+                    <div class="header__menu-phone">
+                        <a class="header__menu-phone-link" href="tel:+74952660667">+7 495 266-06-67</a>
+                        <a class="header__menu-phone-link" href="tel:+79688959759">+7 968 895-97-59</a>
+                    </div>
+                </div>
+
+                <button class="close-nav-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px"
+                        height="40px" viewBox="0 0 40 40" version="1.1">
+                        <g>
+                            <path
+                                style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:#FFFFFF;stroke-opacity:1;stroke-miterlimit:4;"
+                                d="M 7 7 L 25 25 M 7 25 L 25 7 " transform="matrix(1.25,0,0,1.25,0,0)" />
+                        </g>
+                    </svg>
+                </button>
+
+                <div class="nav-menu__box">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a class="menu-item__link menu-item__link-home" href="#">Главная</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a class="menu-item__link" href="#" data-toggle="sub-menu">Джип- туры<span
+                                    class="plus"></span></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a class="submenu__link" href="#">page 1</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 2</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 3</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a class="menu-item__link" href="#" data-toggle="sub-menu">Корпоративы<span
+                                    class="plus"></span></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a class="submenu__link" href="#">page 1</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 2</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 3</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a class="menu-item__link" href="#" data-toggle="sub-menu">Отзывы<span
+                                    class="plus"></span></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a class="submenu__link" href="#">page 1</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 2</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 3</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a class="menu-item__link" href="#" data-toggle="sub-menu">Фото/Видео<span
+                                    class="plus"></span></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a class="submenu__link" href="#">page 1</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 2</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 3</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a class="menu-item__link" href="#" data-toggle="sub-menu">Команда<span
+                                    class="plus"></span></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a class="submenu__link" href="#">page 1</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 2</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 3</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a class="menu-item__link" href="#" data-toggle="sub-menu">Контакты<span
+                                    class="plus"></span></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a class="submenu__link" href="#">page 1</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 2</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 3</a></li>
+                                <li class="menu-item"><a class="submenu__link" href="#">page 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="header__social">
+                        <li class="header__item">
+                            <a class="header__social-link" href="https://www.facebook.com/" target="_blank">
+                                <svg width="30" height="30">
+                                    <use xlink:href="../images/icons/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__social-link" href="https://www.instagram.com/" target="_blank">
+                                <svg width="30" height="30">
+                                    <use xlink:href="../images/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__social-link" href="https://vk.com/" target="_blank">
+                                <svg width="30" height="30">
+                                    <use xlink:href="../images/icons/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__social-link" href="https://www.youtube.com/" target="_blank">
+                                <svg width="31" height="31">
+                                    <use xlink:href="../images/icons/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
 </header>

@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    let menuMain = document.querySelector('.header__bottom');
+    /* let menuMain = document.querySelector('.header__bottom');
     let menuBtn = document.querySelector('.menu__btn');
     let close = document.querySelector('.menu__close');
 
@@ -60,5 +60,5 @@ document.addEventListener('DOMContentLoaded', function () {
     close.addEventListener('click', function () {
         menuMain.classList.remove('active');
         close.classList.remove('active');
-    });
+    }); */
 })

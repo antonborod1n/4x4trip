@@ -62,36 +62,40 @@
 
     .nav-menu {
         position: fixed;
-        right: -280px;
+        right: -360px;
         visibility: hidden;
-        width: 280px;
+        width: 360px;
         height: 100%;
         top: 0;
         overflow-y: auto;
         overflow-x: hidden;
-        background-color: #FFFFFF;
+        background-color: #686868;
         z-index: 1000;
         padding-bottom: 15px;
         transition: all 0.5s ease;
     }
 
-    .nav-menu-top {
-        background-color: rgba(0, 0, 0, .05);
+    .nav-menu__box {
         display: block;
-        text-align: center;
+    }
+
+    .nav-menu-top {
+        background-color: #686868;
+        display: block;
+        text-align: left;
         text-transform: uppercase;
         letter-spacing: .3px;
         font-weight: 500;
         font-size: 12px;
         color: #222;
-        padding: 5px 10px;
-        height: 55px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 15px 50px 15px 10px;
         max-width: 100%;
         cursor: pointer;
         border-bottom: 2px solid $accent;
+
+        div {
+            color: #FFFFFF;
+        }
     }
 
     .nav-menu.open {
@@ -109,12 +113,13 @@
         justify-content: center;
         align-items: center;
         display: flex;
-        right: 10px;
+        right: 0px;
         top: 4px;
         width: 45px;
         height: 45px;
         z-index: 1000;
-        background-color: #222;
+        border: none;
+        background-color: transparent;
     }
 
     .menu-item.menu-item-has-children::before {
@@ -155,6 +160,11 @@
 
     .menu {
         display: block;
+        background-color: #272424;
+    }
+
+    .header__item {
+        padding: 15px;
     }
 
     .menu-item-has-children .menu-item__link {
@@ -164,14 +174,14 @@
     }
 
     .menu-item__link {
-        color: #000000;
+        color: #FFFFFF;
         padding: 12px 15px;
         border-bottom: 1px solid rgba(129, 129, 129, .2);
     }
 
     .plus:before,
     .plus:after {
-        background-color: #000000;
+        background-color: #FFFFFF;
     }
 
     .menu-item-has-children.active .menu-item__link .plus:after {
@@ -196,7 +206,7 @@
 
     .submenu__link {
         padding: 12px 45px;
-        color: #000000;
+        color: #FFFFFF;
         border-bottom: 1px solid rgba(129, 129, 129, .2);
     }
 
@@ -260,24 +270,6 @@
     .header__info-btn {
         display: none;
     }
-
-    .header__bottom {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 10;
-        width: 100%;
-        background-color: rgb(5, 5, 5);
-        flex-direction: column;
-        transform: translateY(-500px);
-        transition: transform .3s;
-    }
-
-    .header__bottom.active {
-        transition: transform .3s;
-        transform: translateX(0);
-    }
-
 
     .description__inner {
         display: grid;

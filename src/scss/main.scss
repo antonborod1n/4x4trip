@@ -14,10 +14,6 @@ body.hidden-scrolling {
     overflow-y: hidden;
 }
 
-.nav-menu {
-    flex-grow: 1;
-}
-
 .nav-menu-top {
     display: none;
 }
@@ -77,7 +73,9 @@ body.hidden-scrolling {
 .menu-item.menu-item-has-children::before {
     content: url(../images/icons/down.png);
     position: absolute;
-    top: 34%;
+    width: 14px;
+    height: 14px;
+    top: 31%;
     right: -8px;
 }
 
@@ -130,11 +128,6 @@ body.hidden-scrolling {
     opacity: 0;
     transition: all 0.5s ease;
 }
-
-
-
-
-
 
 .top {
     background-repeat: no-repeat;
@@ -243,6 +236,31 @@ body.hidden-scrolling {
     }
 }
 
+.header__menu-phone {
+    @extend %f-b;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header__menu-phone-link {
+    @extend %os-600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.header__menu-phone-link:first-child {
+    margin-bottom: 10px;
+}
+
+.header__menu-slogan {
+    @extend %os-600;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
 .header__info-phone-link {
     color: #FFFFFF;
 
@@ -284,7 +302,7 @@ body.hidden-scrolling {
     }
 }
 
-.header__bottom {
+.nav-menu__box {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 130px;
@@ -293,7 +311,7 @@ body.hidden-scrolling {
     padding-bottom: 10px;
 }
 
-.header__menu {
+.menu {
     grid-area: 1 / 1 / 2 / 2;
     margin-left: 70px;
 }
