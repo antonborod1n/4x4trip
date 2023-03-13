@@ -638,6 +638,13 @@
 }
 
 @media (max-width: 768px) {
+    .activ-sertificate__btn {
+
+        &-numb:before,
+        &-date:before {
+            display: none;
+        }
+    }
 
     .slider-main .swiper-button.swiper-button-prev {
         display: block;
@@ -823,29 +830,34 @@
 }
 
 @media (max-width: 450px) {
-    .top__content-box {
-        flex-direction: column;
-        gap: 9px;
+    .top {
+        min-height: 290px;
+
+        &__content-box {
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        &__content-link {
+            font-size: 14px;
+            line-height: 19px;
+            height: 54px;
+            padding: 6px;
+            width: 100%;
+        }
     }
 
-    .top__content-link {
-        font-size: 14px;
-        line-height: 19px;
-        height: 54px;
-        padding: 6px;
-        width: 100%;
-    }
 
     .page-title {
         font-size: 26px;
         line-height: 35px;
         margin-top: 50px;
-    }
 
-    .page-title__big {
-        font-size: 26px;
-        line-height: 35px;
-        margin: 40px 0 12px;
+        &__big {
+            font-size: 26px;
+            line-height: 35px;
+            margin: 40px 0 12px;
+        }
     }
 
     .page-slogan {
@@ -853,50 +865,46 @@
         line-height: 27px;
     }
 
-    .top {
-        min-height: 290px;
-    }
-
     .offer {
         padding: 32px 0 38px;
-    }
 
-    .offer__title {
-        margin-bottom: 29px;
-    }
+        &__title {
+            margin-bottom: 29px;
+        }
 
-    .offer__inner {
-        gap: 23px;
-    }
+        &__inner {
+            gap: 23px;
+        }
 
-    .offer__slider-title {
-        font-size: 18px;
-        line-height: 25px;
-    }
+        &__slider-title {
+            font-size: 18px;
+            line-height: 25px;
+        }
 
-    .offer__slider-item {
-        font-size: 14px;
-        line-height: 19px;
-    }
+        &__slider-item {
+            font-size: 14px;
+            line-height: 19px;
+        }
 
-    .offer__slider-link {
-        font-size: 14px;
-        line-height: 19px;
-        height: 54px;
-        padding: 12px 30px;
+        &__slider-link {
+            font-size: 14px;
+            line-height: 19px;
+            height: 54px;
+            padding: 12px 30px;
+        }
     }
 
     .bye-certificate__content {
         padding: 15px;
-    }
 
-    .bye-certificate__content-item {
-        column-gap: 15px;
-    }
+        &-item {
+            column-gap: 15px;
+        }
 
-    .bye-certificate__content-img {
-        width: 70px;
-        height: 70px;
+        &-img {
+            width: 70px;
+            height: 70px;
+        }
     }
 
     .bye-certificate__btn {
@@ -1433,6 +1441,10 @@
         margin-left: 0px;
     }
 
+    .orientation-top {
+        margin-bottom: 30px;
+    }
+
     .quests__title {
         margin-bottom: 12px;
     }
@@ -1502,6 +1514,13 @@
         padding: 20px 16px;
     }
 
+    .offer__slider-top {
+        padding-bottom: 0px;
+    }
+
+    .offer-slider {
+        margin-bottom: 81px;
+    }
 
     .footer {
         &-content__inner {

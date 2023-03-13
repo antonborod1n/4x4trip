@@ -12,6 +12,10 @@ body {
     display: flex;
     flex-direction: column;
     color: $title;
+
+    &.hidden-scrolling {
+        overflow-y: hidden;
+    }
 }
 
 .container {
@@ -163,14 +167,10 @@ body {
     cursor: pointer;
 }
 
-.offer-slider .swiper-button.swiper-button-prev {
-    left: 0px;
-    top: 0;
-}
-
-.offer-slider .swiper-button.swiper-button-next {
-    right: 0px;
-    top: 0;
+.sertificate-title {
+    text-transform: none;
+    max-width: 1417px;
+    margin-top: 120px;
 }
 
 .swiper-button-next:after,
@@ -199,6 +199,40 @@ body {
 
 .activity-slider .swiper-button.swiper-button-next {
     right: 20px;
+}
+
+
+/* TOP */
+
+.top {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 930px;
+    color: #FFFFFF;
+
+    &__inner {
+        max-width: 703px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    &__content-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    &__content-link {
+        @extend %btn-accent;
+        gap: 10px;
+        font-size: 20px;
+        line-height: 27px;
+        height: 68px;
+        text-transform: uppercase;
+        padding: 12px 30px;
+    }
 }
 
 @media(max-width: 1024px) {
