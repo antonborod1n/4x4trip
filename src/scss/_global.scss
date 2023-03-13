@@ -150,28 +150,56 @@ body {
     margin-bottom: 40px;
 }
 
-
-
-/* .swiper-button {
+.swiper-button {
     position: absolute;
     top: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 52px;
-    height: 52px;
+    min-width: 52px;
+    min-height: 52px;
     border: 2px solid $accent;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.swiper-button-prev {
-    left: 130px;
+.offer-slider .swiper-button.swiper-button-prev {
+    left: 0px;
+    top: 0;
 }
 
-.swiper-button-next {
-    right: 130px;
-} */
+.offer-slider .swiper-button.swiper-button-next {
+    right: 0px;
+    top: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
+}
+
+.activity-slider .swiper-button {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 55px;
+    min-height: 55px;
+    background: #FFFFFF;
+    opacity: 0.7;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.activity-slider .swiper-button.swiper-button-prev {
+    left: 20px;
+}
+
+.activity-slider .swiper-button.swiper-button-next {
+    right: 20px;
+}
 
 @media(max-width: 1024px) {
     .page-title-upper {
