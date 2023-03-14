@@ -70,7 +70,6 @@
 }
 
 @media (max-width: 1024px) {
-
     .quests__content {
         flex-wrap: wrap;
         row-gap: 37px;
@@ -561,12 +560,10 @@
         line-height: 27px;
     }
 
-    .sertificate__info-bottom-img {
-        display: none;
-    }
-
-    .sertificate__info-bottom-img-col {
-        display: block;
+    .sertificate__info-bottom-img-box {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
     }
 
     .activ-sertificate__inner {

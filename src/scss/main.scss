@@ -353,6 +353,16 @@
         @extend %f-b;
         flex-wrap: wrap;
 
+        &-img-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-img:first-child {
+            margin-right: 20px;
+        }
+
         &-text {
             font-size: 24px;
             line-height: 23px;
@@ -435,7 +445,6 @@
         position: relative;
         display: flex;
         gap: 5px;
-        padding-bottom: 108px;
 
         &-info {
             &-box {
@@ -1015,10 +1024,16 @@
 
         &-text {
             color: #FFFFFF;
+            padding-bottom: 20px;
 
             span {
                 display: block;
                 text-transform: uppercase;
+            }
+
+            &.active {
+                animation-name: smoothness;
+                animation-duration: 1s;
             }
         }
     }
@@ -1473,13 +1488,6 @@
             }
         }
 
-        &__decor {
-            @extend %os-700;
-            font-size: 18px;
-            line-height: 25px;
-            color: #EC2B2B;
-        }
-
         &__img {
             max-width: 591px;
             object-fit: cover;
@@ -1532,6 +1540,13 @@
             }
         }
     }
+}
+
+span.subacromial-content__decor {
+    @extend %os-700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #EC2B2B;
 }
 
 .gift {
@@ -2019,7 +2034,11 @@
             margin-left: 60px;
         }
     }
+
+
 }
+
+
 
 .format {
     &__title {
@@ -2101,9 +2120,14 @@
         gap: 44px 0px;
 
         &__personal {
-            display: inline-block;
+            display: inline-flex;
             margin-bottom: 50px;
             cursor: pointer;
+
+            & .filter__personal-link {
+                text-decoration: underline;
+                color: $title;
+            }
         }
     }
 
@@ -2186,8 +2210,11 @@
                 color: $title;
             }
 
-            &-img-col {
-                display: none;
+            &-img-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 56px;
             }
         }
     }
