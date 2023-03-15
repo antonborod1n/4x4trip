@@ -1549,7 +1549,6 @@
             height: 84px;
             background-color: $accent;
             transition: all .3s;
-            cursor: pointer;
 
             div {
                 @extend %osc-700;
@@ -1574,6 +1573,10 @@
                     color: $accent;
                 }
             }
+        }
+
+        &-year {
+            cursor: pointer;
         }
     }
 
@@ -2462,6 +2465,10 @@ span.sertificate__decor {
 .activ-sertificate {
     margin: 99px 0 244px;
 
+    &__label {
+        cursor: pointer;
+    }
+
     &__inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -2497,6 +2504,10 @@ span.sertificate__decor {
         justify-content: flex-start;
         align-items: center;
         column-gap: 57px;
+
+        label {
+            cursor: pointer;
+        }
     }
 
     &__btn {

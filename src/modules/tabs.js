@@ -14,13 +14,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
             tabsBtn.forEach(item => {
                 item.classList.remove(active);
+                item.parentElement.classList.remove(active);
+
             });
         }
 
         function showTabsContent(i = 0) {
             tabsContent[i].style.display = 'block';
             tabsBtn[i].classList.add(active);
-
+            tabsBtn[i].parentElement.classList.add(active);
         }
 
         hideTabContent();
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         tabsControl.addEventListener('click', (event) => {
             const target = event.target;
 
-            if (target && target.classList.contains('activity__tabs-item')) {
+            if (target && target.classList.contains('activity__tabs-year')) {
                 tabsBtn.forEach((item, i) => {
                     if (target == item) {
                         hideTabContent();
@@ -40,5 +42,5 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    tabs('.activity__tabs-item', '.activity__content', '.activity__tabs');
+    tabs('.activity__tabs-year', '.activity__content', '.activity__tabs');
 })
