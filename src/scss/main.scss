@@ -14,6 +14,10 @@
 .header {
     background: rgba(39, 36, 36, 0.8);
 
+    &.active {
+        background-color: #686868
+    }
+
     &__menu {
         &-phone {
             @extend %f-b;
@@ -168,9 +172,36 @@
     }
 }
 
+
 .nav-menu {
     &-top {
         display: none;
+    }
+
+    &__slogan {
+        @extend %os-600;
+        font-size: 12px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 12px;
+    }
+
+    &__working {
+        @extend %os-600;
+        font-size: 12px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 4px;
+    }
+
+    &__hours-box {
+        @extend %os-700;
+        font-size: 12px;
+        line-height: 23px;
+        color: #FFFFFF;
+        margin-bottom: 12px;
     }
 
     &__box {
@@ -181,6 +212,31 @@
         grid-column-gap: 186px;
         padding-bottom: 10px;
     }
+
+    &__phone-box {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+
+        &::before {
+            content: url(../images/icons/phone-mob.svg);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__phone-link {
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+
+        &:first-child {
+            margin-left: 30px;
+        }
+    }
+
 }
 
 .open-nav-menu {
@@ -190,8 +246,142 @@
     cursor: pointer;
 }
 
-.close-nav-menu {
-    display: none;
+.burgermenu {
+    border: none;
+    background: none;
+    min-width: 45px;
+    min-height: 40px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    outline: none;
+    margin: 0 0 10px 30px;
+
+    &:hover {
+        opacity: 1
+    }
+
+    span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        border-top: 2px solid white;
+        transform: translateY(22px);
+        border-radius: 4px;
+        transition: transform 0.5s ease, border-color 0.5s ease 0.3s;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: white;
+            transform: translateY(-22px);
+            animation-name: topLineBurger;
+            animation-duration: 0.6s;
+            animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            animation-fill-mode: forwards;
+            border-radius: 4px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: -11px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: white;
+            transform: translateY(22px);
+            animation-name: bottomLineBurger;
+            animation-duration: 0.6s;
+            animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            animation-fill-mode: forwards;
+            border-radius: 4px;
+        }
+    }
+
+    &.opened {
+        span {
+            border-color: transparent;
+            transition: border-color 0.3s ease;
+
+            &:before {
+                animation-name: topLineCross;
+                animation-duration: 0.3s;
+                animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                animation-fill-mode: forwards;
+            }
+
+            &:after {
+                animation-name: bottomLineCross;
+                animation-duration: 0.3s;
+                animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+
+@keyframes topLineCross {
+    0% {
+        transform: translateY(-35px);
+        top: 7px;
+    }
+
+    50% {
+        transform: translateY(0px)
+    }
+
+    100% {
+        transform: translateY(0px) rotate(45deg);
+        top: 0px;
+    }
+}
+
+@keyframes bottomLineCross {
+    0% {
+        transform: translateY(35px);
+        top: -11px;
+    }
+
+    50% {
+        transform: translateY(0px)
+    }
+
+    100% {
+        transform: translateY(0px) rotate(-45deg);
+        top: 0px;
+    }
+}
+
+@keyframes topLineBurger {
+    0% {
+        transform: translateY(0px) rotate(45deg)
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: translateY(-22px) rotate(0deg)
+    }
+}
+
+@keyframes bottomLineBurger {
+    0% {
+        transform: translateY(0px) rotate(-45deg)
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: translateY(22px) rotate(0deg)
+    }
 }
 
 .menu {
@@ -202,19 +392,6 @@
     column-gap: 70px;
     grid-area: 1 / 1 / 2 / 2;
     margin-left: 70px;
-
-    &-overlay {
-        position: fixed;
-        z-index: 999;
-        background-color: rgba(0, 0, 0, 0.5);
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.5s ease;
-    }
 
     &-item {
         position: relative;
@@ -249,7 +426,7 @@
         }
     }
 
-    &__btn {
+    /* &__btn {
         display: none;
         min-width: 25px;
         height: 25px;
@@ -260,7 +437,7 @@
         background-color: transparent;
         border: none;
         margin-left: 122px;
-    }
+    } */
 }
 
 .plus {

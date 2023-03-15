@@ -1,19 +1,18 @@
 (() => {
     //mobile-menu
     const openNavMenu = document.querySelector(".open-nav-menu"),
-        closeNavMenu = document.querySelector(".close-nav-menu"),
         navMenu = document.querySelector(".nav-menu"),
-        menuOverlay = document.querySelector(".menu-overlay"),
+        header = document.querySelector(".header"),
         mediaSize = 991;
 
     openNavMenu.addEventListener("click", toggleNav);
-    closeNavMenu.addEventListener("click", toggleNav);
+
     // close the navMenu by clicking outside
-    menuOverlay.addEventListener("click", toggleNav);
 
     function toggleNav() {
+        openNavMenu.classList.toggle("opened")
         navMenu.classList.toggle("open");
-        menuOverlay.classList.toggle("active");
+        header.classList.toggle('active')
         document.body.classList.toggle("hidden-scrolling");
     }
 
@@ -61,4 +60,3 @@
         }
     });
 })();
-
