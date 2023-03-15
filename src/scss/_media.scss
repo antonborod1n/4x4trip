@@ -9,10 +9,20 @@
         justify-content: flex-start;
     }
 
-
+    .nav-menu__box {
+        grid-column-gap: 50px;
+    }
 }
 
 @media (max-width: 1280px) {
+    .nav-menu__box {
+        grid-column-gap: 25px;
+    }
+
+    .menu {
+        justify-content: flex-start;
+        column-gap: 0px;
+    }
 
     .offer__inner {
         flex-wrap: wrap;
@@ -83,11 +93,11 @@
 
     .nav-menu {
         position: fixed;
-        right: -360px;
+        right: 100%;
         visibility: hidden;
         width: 100%;
         height: 100%;
-        top: 88px;
+        top: 92px;
         overflow-y: auto;
         overflow-x: hidden;
         background-color: #686868;
@@ -112,7 +122,6 @@
         padding: 16px 20px;
         max-width: 100%;
         cursor: pointer;
-        border-top: 2px solid #d6d6d6;
 
         div {
             color: #FFFFFF;
@@ -645,6 +654,12 @@
 }
 
 @media (max-width: 768px) {
+    .offer-container {
+        max-width: 1513px;
+        padding: 0 0 0 19px;
+        margin: 0 auto;
+    }
+
     .activ-sertificate__btn {
 
         &-numb:before,
@@ -1514,7 +1529,7 @@
     .team__slider-text {
         font-size: 13px;
         line-height: 18px;
-        width: 290px;
+        width: 250px;
     }
 
     .team__slider-box-info {
