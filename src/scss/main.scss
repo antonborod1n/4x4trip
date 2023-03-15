@@ -1577,33 +1577,51 @@
         }
     }
 
-    &__top-panel {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 14px 20px;
-        background-color: $accent;
-        grid-area: 1 / 2 / 2 / 3;
+    &__top {
+        &-control {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 14px 20px;
+            background-color: $accent;
+        }
 
-        &-title {
+        &-numb {
             @extend %osc-700;
-            font-size: 20px;
-            line-height: 27px;
+            display: none;
+            font-size: 16px;
+            line-height: 22px;
             text-transform: uppercase;
-            color: $title;
+            color: #FFFFFF;
         }
 
-        &-data {
-            position: relative;
-        }
+        &-panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            grid-area: 1 / 2 / 2 / 3;
 
-        &-data::before {
-            content: url('../images/icons/calendar.svg');
-            position: absolute;
-            top: 2px;
-            left: -35px;
+            &-title {
+                @extend %osc-700;
+                font-size: 20px;
+                line-height: 27px;
+                text-transform: uppercase;
+                color: $title;
+            }
+
+            &-data {
+                position: relative;
+            }
+
+            &-data::before {
+                content: url('../images/icons/calendar.svg');
+                position: absolute;
+                top: 2px;
+                left: -35px;
+            }
         }
     }
+
 
     &__content {
         grid-area: 2 / 2 / 4 / 3;
