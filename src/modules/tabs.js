@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         function showTabsContent(i = 0) {
             tabsContent[i].style.display = 'block';
             tabsBtn[i].classList.add(active);
+
         }
 
         hideTabContent();

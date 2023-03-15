@@ -407,6 +407,10 @@
     }
 
     &-contacts {
+        &__list {
+            width: 155px;
+        }
+
         &__title {
             @extend %os-600;
             font-size: 13px;
@@ -948,12 +952,33 @@
         position: relative;
         background: #FFFFFF;
         border: 6px solid $accent;
+        border-right: 19px solid $accent;
+        border-bottom: 19px solid $accent;
         transition: all .5s;
         cursor: pointer;
         z-index: 1;
         padding: 0px 50px;
-        height: 378px;
-        border: 6px solid $accent;
+        height: 359px;
+
+        &::after {
+            content: '';
+            width: 13px;
+            height: 13px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: -6px;
+            right: -19px;
+        }
+
+        &::before {
+            content: '';
+            width: 13px;
+            height: 13px;
+            background-color: #FFFFFF;
+            position: absolute;
+            bottom: -19px;
+            left: -6px;
+        }
     }
 
     &__subtitle {
