@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
-const CopyPlugin = require("copy-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -15,6 +15,8 @@ module.exports = {
     index_contact: path.resolve(__dirname, './src/index_contact.js'),
     index_sertificate: path.resolve(__dirname, './src/index_sertificate.js'),
     index_sertificate1: path.resolve(__dirname, './src/index_sertificate1.js'),
+    index_competitions: path.resolve(__dirname, './src/index_competitions.js'),
+    index_school: path.resolve(__dirname, './src/index_school.js'),
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -25,47 +27,57 @@ module.exports = {
       title: 'webpack Boilerplate',
       template: path.resolve(__dirname, './src/template.html'), // шаблон
       filename: 'index.html', // название выходного файла
-      chunks: ['main']
+      chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/subacromial.html'),
       filename: 'subacromial.html',
-      chunks: ['index_subacromial']
+      chunks: ['index_subacromial'],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/calculation.html'),
       filename: 'calculation.html',
-      chunks: ['index_calculation']
+      chunks: ['index_calculation'],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/quests.html'),
       filename: 'quests.html',
-      chunks: ['index_quests']
+      chunks: ['index_quests'],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/team.html'),
       filename: 'team.html',
-      chunks: ['index_team']
+      chunks: ['index_team'],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/activity.html'),
       filename: 'activity.html',
-      chunks: ['index_activity']
+      chunks: ['index_activity'],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/contact.html'),
       filename: 'contact.html',
-      chunks: ['index_contact']
+      chunks: ['index_contact'],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/sertificate.html'),
       filename: 'sertificate.html',
-      chunks: ['index_sertificate']
+      chunks: ['index_sertificate'],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/sertificate1.html'),
       filename: 'sertificate1.html',
-      chunks: ['index_sertificate1']
+      chunks: ['index_sertificate1'],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/competitions.html'),
+      filename: 'competitions.html',
+      chunks: ['index_competitions'],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/school.html'),
+      filename: 'school.html',
+      chunks: ['index_school'],
     }),
 
     new CleanWebpackPlugin(),
@@ -73,10 +85,11 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: "src/images", to: "images"
-        }
-      ]
-    })
+          from: 'src/images',
+          to: 'images',
+        },
+      ],
+    }),
   ],
   module: {
     rules: [
@@ -108,11 +121,11 @@ module.exports = {
         use: {
           loader: 'html-loader',
           options: {
-            interpolate: true
-          }
-        }
-      }
-    ]
+            interpolate: true,
+          },
+        },
+      },
+    ],
   },
 
   mode: 'development',
@@ -120,7 +133,10 @@ module.exports = {
     historyApiFallback: true,
     static: './dist',
     //contentBase: path.resolve(__dirname, './dist'),
-    open: true, compress: true, hot: true, port: 8080,
+    open: true,
+    compress: true,
+    hot: true,
+    port: 8080,
   },
 
   optimization: {
@@ -128,9 +144,9 @@ module.exports = {
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/].*\.js$/,
-          chunks: 'all'
-        }
-      }
-    }
-  }
-}
+          chunks: 'all',
+        },
+      },
+    },
+  },
+};

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ШКОЛА ВНЕДОРОЖНОГО ВОЖДЕНИЯ</title>
+  </head>
+
+  <body>
+    <section class="top school-page">
+      <%= require('html-loader!./templates/header.html').default %>
+      <div class="top__content">
+        <div class="container">
+          <h1 class="page-title">ШКОЛА ВНЕДОРОЖНОГО ВОЖДЕНИЯ КАЖДОЕ ВОСКРЕСЕНЬЕ</h1>
+        </div>
+      </div>
+    </section>
+
+    <main class="main"><%= require('html-loader!./templates/page-school.html').default %></main>
+    <%= require('html-loader!./templates/footer.html').default %>
+  </body>
+</html>
