@@ -110,12 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
-    breakpoints: {
-      1250: {
-        slidesPerView: 10,
-      },
-    },
   });
 
   let school = new Swiper(sliderSchool, {
