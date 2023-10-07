@@ -115,10 +115,6 @@ document.addEventListener('DOMContentLoaded', function () {
       1250: {
         slidesPerView: 10,
       },
-
-      1024: {
-        slidesPerView: 5,
-      },
     },
   });
 
