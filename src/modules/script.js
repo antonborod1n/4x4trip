@@ -106,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let schoolNav = new Swiper(sliderSchoolNav, {
     spaceBetween: 8,
+    slidesPerView: 10,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

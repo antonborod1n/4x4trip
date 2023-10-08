@@ -3246,6 +3246,10 @@ ol.activ-sertificate__list {
     overflow-x: hidden;
     margin: 0 auto;
 
+    @media (max-width: 1500px) {
+      margin: 0 60px;
+    }
+
     .swiper-slide.swiper-slide-visible {
       border: 2px solid transparent;
     }
@@ -3267,10 +3271,6 @@ ol.activ-sertificate__list {
     top: 0;
     left: 0;
     width: 100%;
-
-    @media (max-width: 1500px) {
-      display: none;
-    }
 
     .swiper-button-prev {
       position: absolute;
