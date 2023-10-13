@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
@@ -79,7 +80,7 @@ module.exports = {
       filename: 'school.html',
       chunks: ['index_school'],
     }),
-
+    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new CopyPlugin({
@@ -112,7 +113,7 @@ module.exports = {
       //SCSS to CSS
       {
         test: /\.(scss|css)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       // HTML Templates with html-loader
       {
